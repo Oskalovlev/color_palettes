@@ -1,4 +1,4 @@
-# color_palettes
+# Color Palettes
 REST API сервис для работы с палитрами цветов
 
 
