@@ -160,4 +160,9 @@ cython_debug/
 #.idea/
 
 /static/
+static
+*/static/*
+
 /data_source/
+
+.env
