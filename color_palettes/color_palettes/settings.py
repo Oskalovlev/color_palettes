@@ -88,16 +88,6 @@ WSGI_APPLICATION = "color_palettes.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": os.getenv("DB_ENGINE", default="django.db.backends.postgresql"),
-#         "NAME": os.getenv("DB_NAME", default="postgres"),
-#         "USER": os.getenv("POSTGRES_USER", default="postgres"),
-#         "PASSWORD": os.getenv("POSTGRES_PASSWORD", default="postgres"),
-#         "HOST": os.getenv("DB_HOST", default="db"),
-#         "PORT": os.getenv("DB_PORT", default=5432)
-#     }
-# }
 
 DATABASES = {
     "default": {
@@ -109,18 +99,6 @@ DATABASES = {
         "PORT": os.getenv("POSTGRES_PORT", default=5432)
     }
 }
-
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "postgres",
-#         "USER": "postgres",
-#         "PASSWORD": "postgres",
-#         "HOST": "db",
-#         "PORT": 5432
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -176,9 +154,6 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework.authentication.TokenAuthentication",
     ],
-    # "DEFAULT_FILTER_BACKENDS": (
-    #     "django_filters.rest_framework.DjangoFilterBackend",
-    # ),
 }
 
 DJOSER = {
