@@ -13,14 +13,14 @@ REST API сервис для работы с палитрами цветов
     cd color_palettes/
     ```
 
-    * Создать в директории `infra/` файл `.env` командой:
+    * Создать в директории `color_palettes/` файл `.env` командой:
 
         ```sh
         touch color_palettes/.env
         ```
         > Заполнить переменные по примеру файла `.env.example`
 ---
-2. *Для работы с PostgreSQL*:
+2. *Для работы с PostgreSQL* через Docker:
 
     * Создать в директории `infra/` файл `.env` командой:
 
@@ -55,7 +55,6 @@ REST API сервис для работы с палитрами цветов
         ```sh
         python color_palettes/manage.py migrate
         ```
-
     * Создайте миграции
         ```sh
         python color_palettes/manage.py makemigrations user
@@ -63,7 +62,6 @@ REST API сервис для работы с палитрами цветов
         ```sh
         python color_palettes/manage.py makemigrations palette
         ```
-
     * Примените миграции
         ```sh
         python color_palettes/manage.py migrate
@@ -74,7 +72,6 @@ REST API сервис для работы с палитрами цветов
     ```sh
     python color_palettes/manage.py createsuperuser
     ```
-
     > Для примера, данные суперюзера:
 
         username: admin
